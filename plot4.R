@@ -26,7 +26,7 @@ with(sub_df,plot(DateTime, as.numeric(Voltage), type = "l", xlab = "datetime",yl
 with(sub_df,plot(DateTime, as.numeric(Sub_metering_1), type = "l", xlab = "",ylab = "Energy sub metering", main = ""))
 with(sub_df,points(DateTime, as.numeric(Sub_metering_2), col = "red", type = "l"))
 with(sub_df,points(DateTime, as.numeric(Sub_metering_3), col = "blue", type = "l"))
-legend("topright",lwd = 1, col = c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lwd = 1,bty="n", col = c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 #Plot4
 with(sub_df,plot(DateTime, as.numeric(Global_reactive_power), type = "l", xlab = "datetime",ylab = "Global_reactive_power", main = ""))
